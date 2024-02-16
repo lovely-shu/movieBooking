@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking system</title>
+    <script defer src="js/booking.js"></script>
+    <style>
+        .occupied{
+            background-color: rgb(253, 154, 229);
+            box-shadow: 1px 2px 2px 1px rgb(245, 170, 181);
+        }
+        .seat{
+            background-color: rgb(255, 226, 231);
+        }
+        .occupied, .seat{
+            width: 23px;
+            height: 20px;
+            cursor: pointer;
+            display: inline-block;
+            margin: 2px;
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+        }
+        .occupied:hover, .seat:hover{
+            background-color:rgb(253, 154, 229) ;
+            box-shadow: 1px 2px 2px 1px rgb(245, 170, 181);
+        }
+      .seat:nth-child(7) , .occupied:nth-child(7){
+        margin-left: 20px;
+      }
+      .seat:nth-child(3) , .occupied:nth-child(3){
+        margin-left: 20px;
+      }
+      .screen{
+        margin: 20px auto;
+        padding: 5px;
+        width: 140px;
+        height: 0;
+        border-top: 40px solid rgb(255, 244, 253);
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        transform: rotateX(-40deg);
+      }
+    #bookcontainer{
+        background-color: lightpink;
+        width: 350px;
+        height: 500px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+    }
+    #occupiedSeat{
+        width: 23px;
+            height: 20px;
+            display: inline-block;
+            margin: 2px;
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+            background-color: rgb(253, 154, 229);
+    }
+    #unoccupiedSeat{
+        width: 23px;
+            height: 20px;
+            display: inline-block;
+            margin: 2px;
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+            background-color: rgb(255, 226, 231);
+    }
+    #seatdes{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: rgba(209, 183, 183, 0.5);
+        margin-top: 30px;
+        padding: 5px 15px;
+        border-radius: 10px;
+        color: #777777;
+    }
+    label{
+        margin-top: 20px;
+        margin-right: 10px;
+        display: inline-block;
+        color: white;
+    }
+    #Seatspan{
+        margin-right: 10px;
+    }
+    #total{
+        color: white;
+        margin-top: 50px;
+    }
+    #movie2{
+        appearance: none;
+        padding: 5px;
+        border-radius: 10px;
+        border: 1px solid pink;
+        color: rgb(230, 131, 230);
+        text-align: center;
+    }
+   
+    </style>
+</head>
+<body>
+    <div id="bookcontainer">
+        <div class="movieContainer">
+            <label for="movie2">Pick a Movie</label>
+            <select name="pickmovie" id="movie2">
+                <option class="price" value="10">Avengers($10)</option>
+                <option class="price" value="12">Joker($12)</option>
+                <option class="price" value="18">Toy Story($18)</option>
+                <option class="price" value="9">The Lion King($9)</option>
+            </select>
+        </div>
+        <div id="seatdes">
+            <div id="unoccupiedSeat"></div>
+            <span id="Seatspan">Available Seat</span>
+            <div id="occupiedSeat"></div>
+            <span>occupied Seat</span>
+        </div>
+    
+
+        <div class="seatContainer">
+            <div class="screen"></div>
+        </div>
+
+        <div id="totalbox">
+            <p id="total"></p>
+        </div>
+    </div>
+</body>
+</html>

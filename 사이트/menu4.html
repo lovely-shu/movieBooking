@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="css/menu.css">
+  <script defer src="js/booking.js"></script>
+</head>
+<body>
+    
+    <header id="header">
+       <div id="container">
+        <div id="logo">
+            <h1><a href="menu.html">MOVIE</a></h1>
+        </div>
+        <div id="menu">
+            <ul id="menu_ul">
+                <li><a href="menu.html">이용 안내</a></li>
+                <li><a href="menu2.html">영화 소개</a></li>
+                <li><a href="menu3.html">예약 방법 및 요금</a></li>
+                <li><a href="menu4.html">예약 하기</a></li>
+            </ul>
+        </div>
+        <div id="log">
+            <a href="#"><img src="img/images.png" alt="사용자" width="45" height="45"></a>
+        </div>
+       </div>
+    </header>
+
+    <div id="bookcontainer" class="content">
+       
+        <div class="movieContainer">
+            <label for="movie2">Pick a Movie</label>
+            <select name="pickmovie" id="movie2">
+                <option class="price" value="10">도그데이즈($10)</option>
+                <option class="price" value="12">윙카($12)</option>
+                <option class="price" value="18">데드맨($18)</option>
+                <option class="price" value="9">The Lion King($9)</option>
+            </select>
+        </div>
+        <div id="seatdes">
+            <div id="unoccupiedSeat"></div>
+            <span id="Seatspan">Available Seat</span>
+            <div id="occupiedSeat"></div>
+            <span>occupied Seat</span>
+        </div>
+    
+
+        <div class="seatContainer">
+            <div class="screen"></div>
+        </div>
+
+        <div id="totalbox">
+            <p id="total"></p>
+        </div>
+    </div>
+</body>
+</html>

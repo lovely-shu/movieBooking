@@ -1,0 +1,145 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#movie{
+    width: 800px;
+    margin: 100px auto;
+}
+.poster{
+    list-style: none;
+    overflow: hidden;
+    margin: 10px;
+    display: block;
+    width: 200px;
+    position: relative;
+}
+#movieul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+.pos{
+    width: 200px;
+   z-index: 5;
+   border-radius: 10px;
+   box-shadow: 2px 2px 2px 2px #b1b1b1;
+   z-index: 5;
+   border: 12px ridge pink;
+}
+
+#movietitle{
+    color: pink;
+    text-align: center;
+ 
+}
+p{
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.info{
+    width: 200px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 10;
+    top: 220px;
+    transition: all 1s ease-in-out;
+    opacity: 0;
+    background-color: rgba(128, 40, 84, 0.7);
+    color: white
+   
+}
+.pos{
+    margin-top: 50px;
+}
+.poster:hover {
+    transform: scale(1.2);
+    transition: all 1s;
+}
+.poster:hover .info{
+    opacity: 1;
+    transform: translateY(-100px);
+}
+h3{
+    margin-left: 5px;
+    
+}
+
+
+#header{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    width: 100%;
+    background-color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#menu_ul{
+    display: flex;
+    height: 60px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#menu_ul li{
+    list-style: none;
+    font-size: 16px;
+}
+#logo{
+    width:100px ;
+    margin-left: 10px;
+}
+#log{
+    width: 100px;
+}
+#menu{
+    width: calc(100% - 500px);
+
+}
+a{
+    text-decoration: none;
+    color: lightpink;
+    display: block;
+}
+#menu_ul li a:hover{
+    color: white;
+    background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+    transition: 0.5s;
+    box-shadow: 1px 2px 2px 1px #eee9e9;
+    font-weight: bold;
+}
+#menu_ul li a{
+    padding: 15px;
+    border-radius: 20px;
+}
+img{
+    border-radius: 50px;
+}
+body{
+    background-color: rgb(255, 228, 233);
+    margin: 0;
+}
+.content{
+    border: 1px solid pink;
+    border-radius: 20px;
+    box-shadow: 1px 2px 2px 1px #ccc;
+    padding: 20px;
+    background-color:white ;
+}
+.h3:hover{
+    border: 5px solid pink;
+    transition: all 0.5s ease-in-out;
+}

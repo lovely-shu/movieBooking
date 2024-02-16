@@ -1,0 +1,76 @@
+.container{
+    width: 960px;
+    margin: 0 auto;
+}
+.navi{
+    width: 960px;
+    height: 60px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ccc;
+    background-color: rgba(255, 198, 217,0.9);
+    border-radius: 20px;
+   
+}
+.navi ul{
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin-left: 100px;
+   
+}
+.navi ul li{
+    float: left;
+    width: 150px;
+    padding: 10px;
+}
+.navi a:link,.navi a:visited{
+    display: block;
+    font-size: 16px;
+    color: rgb(151, 35, 130);
+    font-weight: bold;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+}
+.navi a:hover, .navi a:focus{
+    background-color: pink;
+    color: #fff;
+}
+.navi a:active{
+    background-color: purple;
+
+}
+.content{
+    margin: 30px auto;
+    width: 700px;
+    padding: 20px;
+    border: 3px dotted rgb(211, 30, 60);
+    border-radius: 20px;
+    color: rgb(236, 79, 79);
+    background-color: rgba(255, 219, 225, 0.9);
+}
+#intro{
+    margin-top: 100px;
+}
+#intro:target{
+    background-color: #d5ffe1;
+    color: #17700c;
+}
+#movie:target{
+    background-color: #ffe4ce;
+}
+#booking:target{
+    background-color: #fff8dc;
+}
+.des1{
+    float: right;
+    width: 490px;
+    line-height: 1.8;
+}
+
+body{
+background-image: url(img4.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}

@@ -1,0 +1,216 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#header{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    width: 100%;
+    background-color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#menu_ul{
+    display: flex;
+    height: 60px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#menu_ul li{
+    list-style: none;
+    font-size: 16px;
+}
+#logo{
+    width:100px ;
+    margin-left: 10px;
+}
+#log{
+    width: 100px;
+}
+#menu{
+    width: calc(100% - 500px);
+
+}
+a{
+    text-decoration: none;
+    color: lightpink;
+    display: block;
+}
+#menu_ul li a:hover{
+    color: white;
+    transition: 0.5s;
+    font-weight: bold;
+    box-shadow: 1px 2px 2px 1px #eee9e9;
+    background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+ 
+}
+#menu_ul li a{
+    padding: 15px;
+    border-radius: 20px;
+
+}
+img{
+    border-radius: 50px;
+}
+
+body{
+    background-color: rgb(255, 228, 233);
+    margin: 0;
+}
+
+#title{
+text-align: center;
+background-color: pink;
+padding: 10px;
+color: white;
+border-radius: 5px;
+
+
+}
+
+p{
+font-size: 18px;
+font-weight: bold;
+color: #50474e;
+}
+
+h2{
+    color: pink;
+    text-align: center;
+}
+h3{
+font-weight: bold;
+background-color: rgb(253, 206, 206);
+color: white;
+border-radius: 5px;
+padding: 5px;
+margin: 10px 0;
+}
+
+#intro{
+    width: 610px;
+    margin: 100px auto;
+}
+#booking{
+    width: 610px;
+    margin: 100px auto;
+}
+
+.occupied{
+    background-color: rgb(253, 154, 229);
+    box-shadow: 1px 2px 2px 1px rgb(245, 170, 181);
+}
+.seat{
+    background-color: rgb(255, 226, 231);
+}
+.occupied, .seat{
+    width: 23px;
+    height: 20px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 2px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+.occupied:hover, .seat:hover{
+    background-color:rgb(253, 154, 229) ;
+    box-shadow: 1px 2px 2px 1px rgb(245, 170, 181);
+}
+.seat:nth-child(7) , .occupied:nth-child(7){
+margin-left: 20px;
+}
+.seat:nth-child(3) , .occupied:nth-child(3){
+margin-left: 20px;
+}
+.screen{
+margin: 20px auto;
+padding: 5px;
+width: 140px;
+height: 0;
+border-top: 40px solid rgb(255, 244, 253);
+border-left: 30px solid transparent;
+border-right: 30px solid transparent;
+transform: rotateX(-40deg);
+}
+#bookcontainer{
+background-color: lightpink;
+width: 430px;
+height: 500px;
+margin: 100px auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+border-radius: 10px;
+}
+#occupiedSeat{
+width: 23px;
+    height: 20px;
+    display: inline-block;
+    margin: 2px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background-color: rgb(253, 154, 229);
+}
+#unoccupiedSeat{
+width: 23px;
+    height: 20px;
+    display: inline-block;
+    margin: 2px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background-color: rgb(255, 226, 231);
+}
+#seatdes{
+display: flex;
+flex-direction: row;
+align-items: center;
+background-color: rgba(209, 183, 183, 0.5);
+margin-top: 30px;
+padding: 5px 15px;
+border-radius: 10px;
+color: #777777;
+}
+label{
+margin-top: 20px;
+margin-right: 10px;
+display: inline-block;
+color: white;
+}
+#Seatspan{
+margin-right: 10px;
+}
+#total{
+color: white;
+margin-top: 50px;
+}
+#movie2{
+appearance: none;
+padding: 5px;
+border-radius: 10px;
+border: 1px solid pink;
+color: rgb(230, 131, 230);
+text-align: center;
+}
+.content{
+    border: 1px solid pink;
+    border-radius: 20px;
+    box-shadow: 1px 2px 2px 1px #ccc;
+    padding: 20px;
+    background-color:white ;
+}
+h3:hover{
+    border: 5px solid pink;
+    transition: all 0.5s ease-in-out;
+}
